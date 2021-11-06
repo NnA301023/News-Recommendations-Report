@@ -202,6 +202,7 @@ Metriks terbaik adalah metriks hybrid dikarenakan metode tersebut adalah gabunga
 2. Cossine Similarity : Metode Cosine Similarity adalah mengukur kemiripan antara dua dokumen atau teks. Pada Cosine Similarity dokumen atau teks dianggap sebagai vector. Pada penelitian ini, Cosine Similarity digunakan untuk menghitung jumlah kata istilah yang muncul pada halaman-halaman yang diacu pada daftar indeks.
 
 <p align="center"><img src="https://miro.medium.com/max/700/1*LfW66-WsYkFqWc4XYJbEJg.png"></p>
+
 ****
 
 # Conclusion & Future Work(s)
