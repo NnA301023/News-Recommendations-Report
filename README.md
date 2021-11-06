@@ -15,19 +15,19 @@ Apabla terjadi kesalahan dalam load jupyter file, penulis bagikan versi online m
 
   1. Berdasarkan Fakta 
   
-    Informasi dalam berita yang disampaikan haruslah sesuai fakta yang sesungguhnya terjadi di lapangan. Berita tidak boleh dibuat berdasarkan karangan atau cerita fiktif.
+   Informasi dalam berita yang disampaikan haruslah sesuai fakta yang sesungguhnya terjadi di lapangan. Berita tidak boleh dibuat berdasarkan karangan atau cerita fiktif.
 
   2. Aktual
 
-    Informasi dalam berita yang disampaikan adalah informasi terkini atau terbaru. Hal ini bisa dibuktikan dengan jarak waktu antara berita disiarkan dengan kejadian yang diberitakan tidak berbeda terlalu jauh.
+   Informasi dalam berita yang disampaikan adalah informasi terkini atau terbaru. Hal ini bisa dibuktikan dengan jarak waktu antara berita disiarkan dengan kejadian yang diberitakan tidak berbeda terlalu jauh.
 
   3. Berimbang
 
-    Dalam berita, informasi yang disampaikan tidak hanya harus berupa fakta namun juga berimbang. Berimbang maksudnya, fakta atau informasi yang disampaikan adalah informasi yang sebenarnya serta tidak memihak maupun memojokkan salah satu pihak. Dengan begitu masyarakat yang membaca atau melihat juga tidak akan terpengaruh.
+   Dalam berita, informasi yang disampaikan tidak hanya harus berupa fakta namun juga berimbang. Berimbang maksudnya, fakta atau informasi yang disampaikan adalah informasi yang sebenarnya serta tidak memihak maupun memojokkan salah satu pihak. Dengan begitu masyarakat yang membaca atau melihat juga tidak akan terpengaruh.
 
   4. Lengkap
  
-    Unsur terakhir yang harus ada dalam sebuah berita adalah lengkap. Artinya setiap informasi dalam berita harus disajikan secara lengkap, tidak ada yang disembunyikan atau dikurangi. Dengan begitu masyarakat atau khalayak luas yang membaca atau mendengarkan berita tidak menjadi bingung atas informasi yang disampaikan.
+   Unsur terakhir yang harus ada dalam sebuah berita adalah lengkap. Artinya setiap informasi dalam berita harus disajikan secara lengkap, tidak ada yang disembunyikan atau dikurangi. Dengan begitu masyarakat atau khalayak luas yang membaca atau mendengarkan berita tidak menjadi bingung atas informasi yang disampaikan.
 
 Berdasarkan pengertian dan syarat sebuah berita diatas, dapat dipahami gambaran berita secara umum, oleh karena itu penulis berinisiatif untuk membuat sistem rekomendasi berita sehingga dapat mempermudah pengguna dalam membaca berita berdasarkan beberapa metode yang dipelajari di [Dicoding](https://www.dicoding.com/academies/319/tutorials/17114).
 
