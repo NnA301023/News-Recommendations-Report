@@ -514,6 +514,19 @@ class ModelEvaluator:
                         'recall@10': global_recall_at_10}    
       return global_metrics, detailed_results_df
     
+# define function for inspect interactions
+def inspect_interactions(person_id, test_set=True):
+    if test_set:
+        interactions_df = interactions_test_indexed_df
+    else:
+        interactions_df = interactions_train_indexed_df
+    return interactions_df.loc[person_id].merge(articles_df, how = 'left', 
+                                                      left_on = 'contentId', 
+                                                      right_on = 'contentId') \
+                          .sort_values('eventStrength', ascending = False)[['eventStrength', 
+                                                                          'contentId',
+                                                                          'title', 'url', 'lang']]
+                                                                          
 # inherit class into model_evaluator variable
 model_evaluator = ModelEvaluator()
 
@@ -528,10 +541,10 @@ Metode ini memanfaatkan deskripsi atau atribut dari item yang telah berinteraksi
 import nltk
 nltk.download("stopwords")
 
-#Ignoring stopwords (words with no semantics) from English and Portuguese (as we have a corpus with mixed languages)
+# ignoring stopwords (words with no semantics) from English and Portuguese (as we have a corpus with mixed languages)
 stopwords_list = stopwords.words('english') + stopwords.words('portuguese')
 
-#Trains a model whose vectors size is 5000, composed by the main unigrams and bigrams found in the corpus, ignoring stopwords
+# trains a model whose vectors size is 5000, composed by the main unigrams and bigrams found in the corpus, ignoring stopwords
 vectorizer = TfidfVectorizer(analyzer='word',
                      ngram_range=(1, 2),
                      min_df=0.003,
@@ -828,10 +841,17 @@ def inspect_interactions(person_id, test_set=True):
 
 """Di sini penulis melihat beberapa artikel yang berinteraksi dengan author di Deskdrop dari training set. Sehingga dapat dengan mudah mengamati bahwa di antara minat utama author adalah Ai, Deep Learning, Machine Learning, dan platform Google cloud."""
 
-inspect_interactions(author, test_set=False).head(10)
+# example recommendation system base on author of this dataset
+inspect_interactions(author, test_set=False).head(5)
+
+# content based model testing
+content_based_recommender_model.recommend_items(author, topn=5, verbose = True)
+
+# collaborative filter model testing
+cf_recommender_model.recommend_items(author, topn=5, verbose=True)
 
 # testing base on author interaction using hybrid model ( because this model is highest recall)
-hybrid_recommender_model.recommend_items(author, topn=20, verbose=True)
+hybrid_recommender_model.recommend_items(author, topn=5, verbose=True)
 
 """## 5.6 Model Comparison"""
 
