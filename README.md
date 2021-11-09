@@ -86,7 +86,7 @@ Dataset [Article News](https://www.kaggle.com/gspmoreira/articles-sharing-readin
 **Konten**
 
   Kumpulan data yang kaya dan langka ini berisi sampel nyata dari log 12 bulan (Maret 2016 - Februari 2017) dari platform Komunikasi Internal CI&T (DeskDrop).
-Saya berisi sekitar 73 ribu interaksi pengguna yang tercatat di lebih dari 3 ribu artikel publik yang dibagikan di platform.
+Dataset berisi sekitar 73 ribu interaksi pengguna yang tercatat di lebih dari 3 ribu artikel publik yang dibagikan di platform.
 
 Dataset ini memiliki beberapa karakteristik khusus: 
 
@@ -142,6 +142,10 @@ Dataset ini memiliki beberapa karakteristik khusus:
    1. Stopwords : Stopwords adalah setiap kata dalam stop list yang difilter sebelum atau setelah pemrosesan data bahasa alami. Stopwords yang digunakan pada penelitian adalah stopwords bahasa portugis dan inggris.
     
    2. TF-IDF : Term Frequency merupakan frekuensi kemunculan term i pada dokumen j dibagi dengan total term pada dokumen j.
+   
+   Berikut contoh output dari model content based filtering
+   
+   <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_10.jpeg"></p>
 
 ## Collaborative Filtering ( Model Based )
 
@@ -153,6 +157,10 @@ Dataset ini memiliki beberapa karakteristik khusus:
    2. Matriks Faktorisasi : Matrix Factorization adalah penguraian suatu matriks menjadi beberapa buah matriks. membentuk suatu himpunan konveks.
    3. Min Max Scaling : Normalisasi data adalah proses membuat beberapa variabel memiliki rentang nilai yang sama, tidak ada yang terlalu besar maupun terlalu kecil sehingga dapat membuat analisis statistik menjadi lebih mudah. Perhatikan dua tabel berikut.
 
+   Berikut contoh output dari model collaborative filtering
+   
+   <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_11.jpeg"></p>
+
 ## Hybrid Model 
 
    Bagaimana jika kita menggabungkan pendekatan Collaborative Filtering dan Content-Based Filtering?
@@ -163,21 +171,21 @@ Dataset ini memiliki beberapa karakteristik khusus:
    Mari kita buat metode hibridisasi sederhana, sebagai ansambel yang mengambil rata-rata tertimbang dari skor CF yang dinormalisasi dengan skor Berbasis Konten, dan memberi
    peringkat berdasarkan skor yang dihasilkan. Dalam hal ini, karena model CF jauh lebih akurat daripada model CB, bobot untuk model CF dan CB masing-masing adalah 100,0 dan
    1,0.
+   
+   Berikut contoh output dari model collaborative filtering
+   
+   <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_12.jpeg"></p>
 
-## Testing Model
+# Evaluation Metrics
 
-   Berikut penulis menguji sistem rekomendasi menggunakan model hybrid.
+1. Recall : Merupakan rasio prediksi benar positif dibandingkan dengan keseluruhan data yang benar positif.
 
-   Data Contoh
-   <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_8.jpeg"></p>
+<p align="center"><img src="https://miro.medium.com/max/418/1*dXkDleGhA-jjZmZ1BlYKXg.png"></p>
 
-  Data Hasil Rekomendasi
-  <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_8.jpeg"></p>
+2. Cossine Similarity : Metode Cosine Similarity adalah mengukur kemiripan antara dua dokumen atau teks. Pada Cosine Similarity dokumen atau teks dianggap sebagai vector. Pada penelitian ini, Cosine Similarity digunakan untuk menghitung jumlah kata istilah yang muncul pada halaman-halaman yang diacu pada daftar indeks.
 
-  Di sini penulis melihat beberapa artikel yang berinteraksi dengan author di Deskdrop dari training set. Sehingga dapat dengan mudah mengamati bahwa di antara minat utama 
-  author adalah Ai, Deep Learning, Machine Learning, dan platform Google cloud. Dan berdasarkan sistem rekomendasi, model bekerja secara optimal dan menyarankan topik-topik 
-  berita yang sesuai dengan topik yang disukai oleh author.
-    
+<p align="center"><img src="https://miro.medium.com/max/700/1*LfW66-WsYkFqWc4XYJbEJg.png"></p>
+
 ## Perbandingan Hasil Setiap Model
 
 Tabel Evaluasi
@@ -192,17 +200,6 @@ Grafik Perbandingan Hasil Evaluasi Setiap Model
   <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_7.png"></p>
   
 Metriks terbaik adalah metriks hybrid dikarenakan metode tersebut adalah gabungan dari metode collaborative filtering & content based.
-
-# Evaluation Metrics
-
-1. Recall : Merupakan rasio prediksi benar positif dibandingkan dengan keseluruhan data yang benar positif.
-
-<p align="center"><img src="https://miro.medium.com/max/418/1*dXkDleGhA-jjZmZ1BlYKXg.png"></p>
-
-2. Cossine Similarity : Metode Cosine Similarity adalah mengukur kemiripan antara dua dokumen atau teks. Pada Cosine Similarity dokumen atau teks dianggap sebagai vector. Pada penelitian ini, Cosine Similarity digunakan untuk menghitung jumlah kata istilah yang muncul pada halaman-halaman yang diacu pada daftar indeks.
-
-<p align="center"><img src="https://miro.medium.com/max/700/1*LfW66-WsYkFqWc4XYJbEJg.png"></p>
-
 ****
 
 # Conclusion & Future Work(s)
