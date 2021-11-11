@@ -69,7 +69,7 @@ Berdasarkan pengertian dan syarat sebuah berita diatas, dapat dipahami gambaran 
 
 Untuk mempermudah pendefinisian langkah-langkah yang diperlukan dalam penelitian kali ini, penulis membuat visualisasi diagram tentang alur kerja secara keseluruhan.
 
-![](https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_1.png)
+   <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_13.jpeg"></p>
 ****
 
 # Dataset Understanding
@@ -197,7 +197,7 @@ Hybrid	|0.342623	|0.479673
 
 Grafik Perbandingan Hasil Evaluasi Setiap Model
 
-  <p align="center"><img src="https://raw.githubusercontent.com/NnA301023/News-Recommendations-Report/main/static/dico2_7.png"></p>
+  c
   
 Metriks terbaik adalah metriks hybrid dikarenakan metode tersebut adalah gabungan dari metode collaborative filtering & content based.
 ****
@@ -215,19 +215,18 @@ Metriks terbaik adalah metriks hybrid dikarenakan metode tersebut adalah gabunga
 ****
 
 # References
-1. https://www.kozio.com/pengertian-berita/
-2. https://journal.unsika.ac.id/index.php/politikomindonesiana/article/download/962/792/2748
-3. https://id.wikipedia.org/wiki/Tf%E2%80%93idf
-4. https://media.neliti.com/media/publications/308844-penerapan-cosine-similarity-dan-k-neares-e0e39635.pdf
-5. https://ocw.ui.ac.id/mod/resource/view.php?id=144#:~:text=Matrix%20Factorization%20adalah%20penguraian%20suatu%20matriks%20menjadi%20beberapa%20buah%20matriks.&text=membentuk%20suatu%20himpunan%20konveks.
-6. https://ilmudatapy.com/evaluasi-model-machine-learning-dengan-train-test-split/
-7. https://mti.binus.ac.id/2020/11/17/sistem-rekomendasi-content-based/
-8. https://jurnal.stmik-mi.ac.id/index.php/jcb/article/download/167/189
-9. http://socj.telkomuniversity.ac.id/ojs/index.php/indojc/article/download/210/104/
-10. https://yunusmuhammad007.medium.com/tf-idf-term-frequency-inverse-document-frequency-representasi-vector-data-text-2a4eff56cda
-11. https://ilmudatapy.com/metode-normalisasi-data/
-12. https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/#:~:text=The%20Singular%2DValue%20Decomposition%2C%20or%20SVD%20for%20short%2C%20is,certain%20subsequent%20matrix%20calculations%20simpler.&text=The%20diagonal%20values%20in%20the,of%20the%20original%20matrix%20A.
-13. https://en.wikipedia.org/wiki/Stop_word
-14. https://en.wikipedia.org/wiki/Pivot_table
-15. https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9
-16. https://towardsdatascience.com/cosine-similarity-how-does-it-measure-the-similarity-maths-behind-and-usage-in-python-50ad30aad7db
+*  [Pengertian Berita](https://www.kozio.com/pengertian-berita/)
+*  [Dampak Media Online pada Perkembangan Media](https://journal.unsika.ac.id/index.php/politikomindonesiana/article/download/962/792/2748)
+*  [Pengertian TF-IDF](https://id.wikipedia.org/wiki/Tf%E2%80%93idf)
+*  [Implementasi Cossine Similarity pada K-NN](https://media.neliti.com/media/publications/308844-penerapan-cosine-similarity-dan-k-neares-e0e39635.pdf)
+*  [Matrix Factorization](https://ocw.ui.ac.id/mod/resource/view.php?id=144#:~:text=Matrix%20Factorization%20adalah%20penguraian%20suatu%20matriks%20menjadi%20beberapa%20buah%20matriks.&text=membentuk%20suatu%20himpunan%20konveks.)
+*  [Pengertian Train Test Split](https://ilmudatapy.com/evaluasi-model-machine-learning-dengan-train-test-split/)
+*  [Implementasi Algoritma Content Based pada Sistem Rekomendasi](https://mti.binus.ac.id/2020/11/17/sistem-rekomendasi-content-based)
+*  [Analisis dan Implementasi Pendekatan Hybrid untuk Sistem Rekomendasi dengan Metode Knowledge Based Recommender System dan Collaborative Filtering](http://socj.telkomuniversity.ac.id/ojs/index.php/indojc/article/download/210/104/)
+*  [Implementasi TF-IDF pada Text Vectorization](https://yunusmuhammad007.medium.com/tf-idf-term-frequency-inverse-document-frequency-representasi-vector-data-text-2a4eff56cda)
+*  [Pengertian Normalisasi Data](https://ilmudatapy.com/metode-normalisasi-data/)
+*  [Pengertian SVD](https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/#:~:text=The%20Singular%2DValue%20Decomposition%2C%20or%20SVD%20for%20short%2C%20is,certain%20subsequent%20matrix%20calculations%20simpler.&text=The%20diagonal%20values%20in%20the,of%20the%20original%20matrix%20A.)
+*  [Pengertian Stopwords](https://en.wikipedia.org/wiki/Stop_word)
+*  [Pengertian Pivot Table](https://en.wikipedia.org/wiki/Pivot_table)
+*  [Metriks Evaluasi: Recall, Precision, F1-Score, dan Accuracy](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)
+*  [Measure Model Performance using Cossine Similarity](https://towardsdatascience.com/cosine-similarity-how-does-it-measure-the-similarity-maths-behind-and-usage-in-python-50ad30aad7db)
