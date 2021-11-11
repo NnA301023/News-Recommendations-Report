@@ -1,6 +1,6 @@
 # Laporan Project Machine Learning Terapan - Alif Ramadhan  
 
-Apabla terjadi kesalahan dalam load jupyter file, penulis bagikan versi online menggunakan google collabs :
+Apabila terjadi kesalahan dalam load jupyter file, penulis bagikan versi online menggunakan google collabs :
 
 [News Recommendation System](https://colab.research.google.com/drive/13G-Z-awm2AoOsfh36vLO3G_4Wd4R4CoJ?usp=sharing)
 ****
@@ -197,7 +197,6 @@ Hybrid	|0.342623	|0.479673
 
 Grafik Perbandingan Hasil Evaluasi Setiap Model
 
-  c
   
 Metriks terbaik adalah metriks hybrid dikarenakan metode tersebut adalah gabungan dari metode collaborative filtering & content based.
 ****
